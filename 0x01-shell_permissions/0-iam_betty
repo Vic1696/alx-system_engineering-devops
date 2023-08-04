@@ -1,0 +1,3 @@
+#!bi/bash
+:1,$s/user/betty/
+
