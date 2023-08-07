@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Get the input from the user
+input=$(cat)
+
+# Reverse the input string
+reversed_input=""
+for i in $(seq $(( ${#input} - 1 )) -1 0); do
+  reversed_input+=${input:$i:1}
+done
+
+# Print the reversed input
+echo "$reversed_input"

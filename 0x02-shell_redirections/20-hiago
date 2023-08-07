@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Get the input from the user
+input=$(cat)
+
+# Create a new string that does not contain any letters c or C
+output=""
+for char in $input; do
+  if [[ $char != "c" && $char != "C" ]]; then
+    output+="$char"
+  fi
+done
+
+# Print the output
+echo "$output"
