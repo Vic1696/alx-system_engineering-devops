@@ -1,12 +1,2 @@
 #!/bin/bash
-
-# Get the users and their home directories from the /etc/passwd file
-users=$(cat /etc/passwd | cut -d: -f1,6)
-
-# Sort the users alphabetically
-users_sorted=$(sort $users)
-
-# Print the users and their home directories, one per line
-for user in $users_sorted; do
-  echo "$user $home_dir"
-done
+cut -d':' -f1,6  /etc/passwd | sort
