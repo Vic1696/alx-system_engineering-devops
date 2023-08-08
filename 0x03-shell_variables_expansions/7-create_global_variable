@@ -1,3 +1,2 @@
 #!/bin/bash
 export BEST="School"
-echo "Global-like variable BEST has been created with value: $BEST"
